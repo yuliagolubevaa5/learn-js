@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <button>Push me</button>
+    <p>Some text with <a href="#">link 1</a></p>
+    <a href="">Link 01</a>
+    <p>Some text with <a href="#">link 2</a></p>
+    <p>Some text with <a href="#">link 3</a></p>
+    <a href="">Link 02</a>
+    <p id="resize-text"></p>
+    <p id="scroll-text"></p>
+    <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+    <script type="text/javascript" src="../libs/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var a = $('a:not("p a")');
+            a.hide().addClass("nonVisible");
+            console.log(a);
+        });
+    </script>
+    <script type="text/javascript" src="common.js"></script>
+</body>
+
+</html>
