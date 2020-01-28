@@ -1,5 +1,45 @@
-#scroll-text{
+#scroll-text {
     position: fixed;
     top: 25px;
     left: 225px;
+}
+
+.selectedImg {
+    background-color: lightgray;
+}
+
+.someDiv {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#div1 {
+    background-color: blue;
+}
+
+#div2 {
+    background-color: green;
+}
+
+#div3 {
+    background-color: yellow;
+}
+
+#div4 {
+    background-color: black;
+}
+
+#div5 {
+    background-color: red;
+}
+
+#modalDiv {
+    width:  400px;
+    height:  400px;
+    position:  absolute;
+    background-color: green;
+    display: none;
+    cursor: pointer;
 }
