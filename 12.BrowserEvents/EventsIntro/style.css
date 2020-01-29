@@ -1,0 +1,144 @@
+ #field {
+     width: 200px;
+     height: 150px;
+     border: 10px solid black;
+     background-color: #00FF00;
+     overflow: hidden;
+     position: relative;
+     cursor: pointer;
+ }
+
+ #ball {
+     position: absolute;
+     transition: all 1s;
+ }
+
+ body {
+     height: 2000px
+ }
+
+ div {
+     margin: 10px;
+ }
+
+ .menu ul {
+     margin: 0;
+     list-style: none;
+     padding-left: 20px;
+     display: none;
+ }
+
+ .title {
+     cursor: pointer;
+ }
+
+ .menu .title::before {
+     content: '▶ ';
+     font-size: 80%;
+     color: green;
+ }
+
+ .menu.open .title::before {
+     content: '▼ ';
+ }
+
+ .menu.open ul {
+     display: block;
+ }
+
+
+
+ h3 {
+     margin: 0;
+     padding-bottom: .3em;
+     font-size: 1.1em;
+ }
+
+ p {
+     margin: 0;
+     padding: 0 0 .5em;
+ }
+
+ .pane {
+     position: relative;
+     background: #edf5e1;
+     padding: 10px 20px 10px;
+     border-top: solid 2px #c4df9b;
+ }
+
+ .remove-button {
+     position: absolute;
+     font-size: 110%;
+     color: darkred;
+     right: 10px;
+     width: 24px;
+     height: 24px;
+     border: none;
+     background: transparent;
+     cursor: pointer;
+ }
+
+
+ /*Карусель*/
+
+ .arrow {
+     padding: 0;
+     background: #ddd;
+     border-radius: 15px;
+     border: 1px solid gray;
+     font-size: 24px;
+     line-height: 24px;
+     color: #444;
+     display: inline-block;
+     vertical-align: middle;
+     user-select: none;
+ }
+
+ .arrow:focus {
+     outline: none;
+ }
+
+ .arrow:hover {
+     background: #ccc;
+     cursor: pointer;
+ }
+
+ .in-frame ul {
+     height: 130px;
+     width: 9999px;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     font-size: 0;
+     position: absolute;
+     /*  left:-910px;*/
+     transition: left 0.5s;
+ }
+
+ .in-frame ul img {
+     width: 130px;
+     height: 130px;
+     display: inline-block;
+ }
+
+ .in-frame ul li {
+     display: inline-block;
+ }
+
+ .karusel {
+     border-radius: 15px;
+     width: 445px;
+     vertical-align: middle;
+     padding: 5px
+ }
+
+ .in-frame {
+     width: 390px;
+     height: 130px;
+     display: inline-block;
+     position: relative;
+     overflow: hidden;
+     vertical-align: middle;
+     user-select: none;
+     pointer-events: none;
+ }
